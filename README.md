@@ -18,6 +18,7 @@ Smartly merge multiple regex
 
 ## Basic Setup
 
+<!-- eslint-disable import/no-unresolved,no-unused-vars -->
 ```js
 const regexMerge = require('regex-merge');
 
