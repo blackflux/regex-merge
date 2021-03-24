@@ -1,5 +1,7 @@
 # regex-merge
 
+Smartly merge multiple regex
+
 [![Build Status](https://circleci.com/gh/blackflux/regex-merge.png?style=shield)](https://circleci.com/gh/blackflux/regex-merge)
 [![Test Coverage](https://img.shields.io/coveralls/blackflux/regex-merge/master.svg)](https://coveralls.io/github/blackflux/regex-merge?branch=master)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=blackflux/regex-merge)](https://dependabot.com)
@@ -15,6 +17,5 @@
 
 
 ## Basic Setup
-
 
 ...
