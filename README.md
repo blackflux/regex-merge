@@ -18,4 +18,18 @@ Smartly merge multiple regex
 
 ## Basic Setup
 
-...
+```js
+const regexMerge = require('regex-merge');
+
+merge(/a/, /b/, /c/);
+// => /abc/
+
+merge(/^a$/, /^b$/, /^c$/);
+// => /^abc$/
+
+merge('$', /^b$/);
+// => /^\$b$/
+
+```
+
+For additional use cases please see tests.
