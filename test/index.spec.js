@@ -53,11 +53,11 @@ describe('Testing regex-merge', () => {
     expect(merge(/al.*/, /be(e)+s/)).to.deep.equal(/al.*be(e)+s/);
   });
 
-  it('Testing Delimiters must be preserved', () => {
+  it('Testing anchors must be preserved', () => {
     expect(merge(/^all/, /bees$/)).to.deep.equal(/^allbees$/);
   });
 
-  it('Testing Delimiters not preserved if output is meaningless', () => {
+  it('Testing anchors not preserved if output is meaningless', () => {
     expect(merge(/^all/, /^bees$/)).to.deep.equal(/^allbees$/);
   });
 
