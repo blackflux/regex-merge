@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 module.exports = (...args) => {
   const hasOptions = (!!args[args.length - 1]) && (args[args.length - 1].constructor === Object);
   const opts = {
@@ -6,6 +8,10 @@ module.exports = (...args) => {
     flags: null,
     ...(hasOptions ? args.pop() : {})
   };
+  assert(Object.keys(opts).length === 3, 'Unknown Option Provided');
+  assert(typeof opts.stripAnchors === 'boolean');
+  assert(opts.anchor === null || typeof opts.anchor === 'boolean');
+  assert(opts.flags === null || typeof opts.flags === 'string');
 
   const flags = [];
   const result = [];
