@@ -30,7 +30,6 @@ merge(/^a$/, /^b$/, /^c$/);
 
 merge('$', /^b$/);
 // => /^\$b$/
-
 ```
 
 For additional use cases please see tests.
