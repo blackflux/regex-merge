@@ -4,13 +4,14 @@
       "assorted/@npm-opensource"
     ],
     "variables": {
-      "nodeVersion": "12",
+      "nodeVersion": "16",
       "repoKey": "blackflux/regex-merge",
       "packageName": "regex-merge",
       "projectName": "regex-merge",
       "owner": "simlu",
       "ownerName": "Lukas Siemon",
-      "mergeBot": "MrsFlux"
+      "mergeBot": "MrsFlux",
+      "nccEnabled": false
     }
   }
 }
