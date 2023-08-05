@@ -20,7 +20,7 @@ Smartly merge multiple regex
 
 <!-- eslint-disable import/no-unresolved,no-unused-vars -->
 ```js
-const regexMerge = require('regex-merge');
+import regexMerge from 'regex-merge';
 
 merge(/a/, /b/, /c/);
 // => /abc/

@@ -1,6 +1,6 @@
-const expect = require('chai').expect;
-const { describe } = require('node-tdd');
-const merge = require('../src/index');
+import { expect } from 'chai';
+import { describe } from 'node-tdd';
+import merge from '../src/index.js';
 
 describe('Testing regex-merge', () => {
   it('Testing simple', () => {
@@ -31,14 +31,18 @@ describe('Testing regex-merge', () => {
 
   it('Testing flag merging', () => {
     expect(merge(
+      // eslint-disable-next-line prefer-regex-literals
       new RegExp('a', 'g'),
+      // eslint-disable-next-line prefer-regex-literals
       new RegExp('b', 'i')
     )).to.deep.equal(/ab/gi);
   });
 
   it('Testing flag overwrite', () => {
     expect(merge(
+      // eslint-disable-next-line prefer-regex-literals
       new RegExp('a', 'g'),
+      // eslint-disable-next-line prefer-regex-literals
       new RegExp('b', 'i'),
       { flags: 'g' }
     )).to.deep.equal(/ab/g);

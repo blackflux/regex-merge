@@ -1,6 +1,6 @@
-const assert = require('assert');
+import assert from 'assert';
 
-module.exports = (...args) => {
+export default (...args) => {
   const hasOptions = (!!args[args.length - 1]) && (args[args.length - 1].constructor === Object);
   const opts = {
     stripAnchors: true,
